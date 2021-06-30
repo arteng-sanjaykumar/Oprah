@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Oprah Likes You. And so do other people.</title>
+
+		<style>
+
+			/* Basic CSS comment */
+			body {
+				background: lightpink;
+				color: white;
+				width: 1000px;
+				margin: 0 auto;
+				font-size: 30px;
+				color: black;
+			}
+
+			h1 {
+				font-size: 60px;
+				color: #333	;
+			}
+			img {
+				width: 480px;
+			}
+
+		</style>
+
+		<script>
+			/* this is an event */
+			/* alert("I'm annoying"); */
+
+			var username = prompt("Hello, who are you?");
+
+			var car = new Array("BMW", "Saab", "Maserati");
+			var images = new Array("BMW.jpg","Saab.jpg","Maserati.jpg");
+
+			if(username==="Chris") {
+				var index = Math.floor(Math.random()*car.length);
+				document.write("<h1>Hello " + username + " you won " + car[index] + "!</h1>");
+
+				document.write("<img src="+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCRFsve0cEezQBT-U8-nxQLeJKc4SJ8RaNlTCY6Bc48iPOt_CsF06DqAL_OIOgPbplfO6K4T25v6K_g&usqp=CAU"+"alt="+"Oprah Image"+">");
+
+				document.write("<img src="+images[index]+" alt="+"Car-Here"+">");
+
+			}
+			else if (username=="Sanjay"){
+				var index = Math.floor(Math.random()*car.length);
+				document.write("<h1>Hello " + username + " you won " + car[index] + "!</h1>");
+
+				document.write("<img src="+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCRFsve0cEezQBT-U8-nxQLeJKc4SJ8RaNlTCY6Bc48iPOt_CsF06DqAL_OIOgPbplfO6K4T25v6K_g&usqp=CAU"+"alt="+"Oprah Image"+">");
+
+				document.write("<img src="+images[index]+" alt="+"Car-Here"+">");
+			}
+			else {
+				document.write("<h1>Hello " + username + "!");
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+		
+	</body>
+
+</html>
